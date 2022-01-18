@@ -26,7 +26,7 @@ struct movie *createMovie(char *currLine)
     currMovie->year = atoi(token)
 
     token = strtok_r(NULL, ",", &saveptr);
-    
+
     
 }
 
@@ -41,4 +41,4 @@ int main(int argc, char *argv[])
     struct movie *list = processFile(argv[1]);
     printMoviesList(list);
     return EXIT_SUCCESS;
-}
+} 
